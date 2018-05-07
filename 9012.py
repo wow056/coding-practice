@@ -1,6 +1,4 @@
-N = int(input())
-
-for i in range(N):
+for i in range(int(input())):
     data = input()
     count_of_open_parenthesis = 0
     is_VPS = True
@@ -15,7 +13,4 @@ for i in range(N):
                 count_of_open_parenthesis -=1
     if count_of_open_parenthesis > 0:
         is_VPS = False
-    if is_VPS:
-        print("YES")
-    else:
-        print("NO")
+    print("YES" if is_VPS else "NO")
